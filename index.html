@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Contatos</title>
+  <link rel="stylesheet" href="./static/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="container">
+        <h1>Lista de Contatos</h1>
+        <img src="./static/img/Trash.png" alt="Adicionar contato" id="clean" />
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <form id="cadastro">
+          <input type="text" name="name" id="name" required placeholder="Nome">
+          <input type="tel" name="cell" id="cell" required placeholder="(27) 99999-9999">
+          <input type="email" name="email" id="email" required placeholder="exemplo@email.com.br">
+          <textarea name="description" id="description" placeholder="Sua descrição..."></textarea>
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <table id="listaContato">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nome</th>
+              <th>Telefone</th>
+              <th>Email</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+          <tfoot>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="./static/js/main.js"></script>
+</body>
+</html>
